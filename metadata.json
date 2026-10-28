@@ -1,0 +1,6 @@
+{
+  "name": "Douyin Downloader Pro (Windows)",
+  "description": "Ứng dụng Windows chuẩn Fluent UI hỗ trợ tìm kiếm video Douyin theo từ khóa, xem trước và tải xuống video không chứa watermark chất lượng cao.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

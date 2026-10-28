@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --win-accent: #0067c0;
+    --win-accent-hover: #1879c9;
+    --win-accent-active: #005fb8;
+    --win-bg: #f3f3f3;
+    --win-card: #ffffff;
+    --win-subtle: #f9f9f9;
+    --win-border: #e5e5e5;
+    --win-text: #1b1b1b;
+    --win-text-secondary: #616161;
+  }
+
+  .dark {
+    --win-accent: #60cdff;
+    --win-accent-hover: #72d4ff;
+    --win-accent-active: #4cc2f7;
+    --win-bg: #202020;
+    --win-card: #2c2c2c;
+    --win-subtle: #272727;
+    --win-border: #383838;
+    --win-text: #ffffff;
+    --win-text-secondary: #a0a0a0;
+  }
+
+  body {
+    font-family: "Segoe UI Variable Text", "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
+    user-select: none;
+    -webkit-font-smoothing: antialiased;
+    overflow: hidden;
+  }
+}
+
+/* Windows Fluent Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(128, 128, 128, 0.35);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(128, 128, 128, 0.6);
+}
+
+/* Windows Fluent Mica / Acrylic Blur effects */
+.win-mica {
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+.win-active-ring {
+  outline: 2px solid var(--win-accent);
+  outline-offset: -2px;
+}
